@@ -15,21 +15,6 @@ export default {
         }
     },
     methods: {
-
-        //moved in global state
-        /* callApi(url) {
-            axios.get(url)
-                .then(response => {
-                    console.log(response.data);
-                    this.store.characters = response.data.results
-                    this.store.indo = response.data.info
-                    this.store.loading = false
-                })
-                .catch(err => {
-                    console.log(err);
-                    console.error(err.messagge);
-                })
-        } */
     },
     mounted() {
         store.fetchCard(store.API_URL)

@@ -17,4 +17,8 @@ export default {
     </main>
 </template>
 
-<style></style>
+<style lang="scss">
+main{
+    background-color: blue;
+}
+</style>

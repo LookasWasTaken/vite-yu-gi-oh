@@ -13,8 +13,14 @@ export default {
 
 <template>
     <header>
-        <h1>sono un header</h1>
+        <div class="container d-flex justify-content-center align-items-center py-2">
+            <img class="img-fluid" width=350 src="../assets/img/yugilogo.svg" alt="Yu-Gi-Oh Logo">
+        </div>
     </header>
 </template>
 
-<style></style>
+<style lang="scss">
+header{
+    background-color: red;
+}
+</style>

@@ -13,8 +13,19 @@ export default {
 
 <template>
     <footer>
-        <h1>sono un footer</h1>
+        <div class="container d-flex flex-column justify-content-center align-items-center py-2">
+            <div>
+                ©2020 Studio Dice/SHUEISHA, TV TOKYO, KONAMI
+            </div>
+            <div>
+                ©Konami Digital Entertainment
+            </div>
+        </div>
     </footer>
 </template>
 
-<style></style>
+<style lang="scss">
+footer{
+    background-color: red;
+}
+</style>

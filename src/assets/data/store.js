@@ -4,7 +4,7 @@ import axios from 'axios';
 export const store = reactive({
     searchText: "",
     loading: true,
-    API_URL: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=50&offset=5500',
+    API_URL: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?num=20&offset=8000',
     cards: null,
     fetchCard(url) {
             axios.get(url)

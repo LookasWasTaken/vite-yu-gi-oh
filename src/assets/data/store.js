@@ -9,7 +9,6 @@ export const store = reactive({
     fetchCard(url) {
             axios.get(url)
                 .then(response => {
-                    console.log(response.data.data);
                     this.cards = response.data.data
                     this.loading = false
                 })

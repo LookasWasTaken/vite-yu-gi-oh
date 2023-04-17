@@ -18,9 +18,3 @@ export default {
         </div>
     </header>
 </template>
-
-<style lang="scss">
-header{
-    background-color: red;
-}
-</style>

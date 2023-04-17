@@ -1,8 +1,10 @@
 <script>
+import CardList from "./CardList.vue"
 import { store } from "../assets/data/store";
 
 export default {
     name: 'AppMain',
+    components: { CardList },
     data() {
         return {
             store
@@ -13,12 +15,18 @@ export default {
 
 <template>
     <main>
-        <h1>sono un main</h1>
+        <div class="search"></div>
+        <!-- search -->
+        <CardList :cards="store.characters"></CardList>
+
     </main>
 </template>
 
 <style lang="scss">
-main{
+main {
     background-color: blue;
+    .search{
+        background-color: green;
+    }
 }
 </style>

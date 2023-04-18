@@ -27,6 +27,3 @@ export default {
     <AppMain></AppMain>
     <AppFooter></AppFooter>
 </template>
-
-<style lang="scss" scoped>
-</style>

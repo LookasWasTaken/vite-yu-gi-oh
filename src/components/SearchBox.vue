@@ -16,7 +16,7 @@ export default {
 
 <template>
     <div class="search">
-        <select class="form-select" aria-label="Default select example">
+        <select v-model="store.searchArchetype" class="form-select" aria-label="Default select example">
             <option selected>Choose Archetype...</option>
             <option value="1">Ancient Gear</option>
             <option value="2">Blue-Eyes</option>

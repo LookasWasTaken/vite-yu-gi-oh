@@ -26,13 +26,3 @@ export default {
         </div>
     </footer>
 </template>
-
-<style lang="scss" scoped>
-
-@use "../assets/scss/partials/variables" as *;
-
-footer{
-    background-color: $accent;
-    padding: 1rem;
-}
-</style>

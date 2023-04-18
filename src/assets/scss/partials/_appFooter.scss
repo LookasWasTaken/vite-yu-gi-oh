@@ -1,5 +1,6 @@
 @use "./variables.scss" as *;
 
 footer{
-    background-color: red; // this file doesn't work, don't know why
+    background-color: $accent;
+    padding: 1rem;
 }

@@ -9,7 +9,7 @@ export default {
 
 <template>
     <div class="col">
-        <div class="my_card text-center h-100">
+        <div class="my_card text-black text-center h-100">
             <img class="img-fluid" :src="card.card_images[0].image_url" :alt="card.name">
             <div class="text">
                 <h4>{{ card.name }}</h4>

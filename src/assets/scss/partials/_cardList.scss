@@ -1,5 +1,9 @@
 @use "./variables.scss" as *;
 
+.main_bg{
+    margin-top: 3rem;
+}
+
 .loader{
     color: $light;
 }

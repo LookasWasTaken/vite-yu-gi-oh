@@ -30,7 +30,4 @@ export default {
 </template>
 
 <style lang="scss">
-    .found {
-        background-color: yellow;
-    }
 </style>

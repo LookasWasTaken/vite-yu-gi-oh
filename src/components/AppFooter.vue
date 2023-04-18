@@ -20,9 +20,19 @@ export default {
             <div>
                 ©Konami Digital Entertainment
             </div>
+            <div>
+                Developed by LookasWasTaken
+            </div>
         </div>
     </footer>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
+
+@use "../assets/scss/partials/variables" as *;
+
+footer{
+    background-color: $accent;
+    padding: 1rem;
+}
 </style>

@@ -2,4 +2,9 @@
 
 main{
     background-color: $darker;
+    padding: 2rem 0;
+    background-image: url(/src/assets/img/magicring.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }

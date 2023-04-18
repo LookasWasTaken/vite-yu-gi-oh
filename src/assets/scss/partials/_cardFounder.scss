@@ -1,1 +1,10 @@
 @use "./variables.scss" as *;
+
+.found{
+    background-color: $light;
+    color: $darker;
+    margin: 12px;
+    padding: 3px 12px;
+    border-radius: 6px;
+    max-width: 17%;
+}

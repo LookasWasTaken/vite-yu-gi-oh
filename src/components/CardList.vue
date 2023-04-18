@@ -14,8 +14,8 @@ export default {
 </script>
 
 <template>
-    <section class="container">
-        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4">
+    <section class="container main_bg">
+        <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-5">
             <!-- cardItem -->
             <CardItem :card="card" v-for="card in store.cards" v-if="!store.loading"></CardItem>
             <div class="loader" v-else>

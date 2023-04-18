@@ -25,7 +25,4 @@ export default {
 </template>
 
 <style lang="scss">
-footer{
-    background-color: red;
-}
 </style>

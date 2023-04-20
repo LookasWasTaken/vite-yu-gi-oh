@@ -17,7 +17,7 @@ export default {
     methods: {
     },
     mounted() {
-        store.fetchCard(store.API_URL)
+        store.fetchCard(store.API_URL+store.pathCustom)
     },
 }
 </script>

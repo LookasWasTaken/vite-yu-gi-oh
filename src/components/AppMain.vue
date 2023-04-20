@@ -15,6 +15,17 @@ export default {
         return {
             store
         }
+    },
+    methods: {
+        filterCards(){
+            let url;
+            if(store.archetype === ""){
+                url = `${store.API_URL + store.pathCustom}`
+            } else {
+                url = `${store.API_URL}?archetype=${store.archetype}`
+            }
+            store.fetchCard(url)
+        }
     }
 }
 </script>
@@ -22,7 +33,7 @@ export default {
 <template>
     <main>
         <div class="container">
-            <SearchBox></SearchBox>
+            <SearchBox @filter="filterCards()"></SearchBox>
             <CardFounder></CardFounder>
             <CardList :cards="store.characters"></CardList>
         </div>

@@ -10,6 +10,13 @@
     background-position-x: right;
     background-position-y: bottom;
     background-size: 55px;
+    transition: all 0.5s;
+    img{
+        transition: all 0.5s;
+    }
+    img:hover{
+        scale: 1.05;
+    }
     .text{
         padding: 0.5rem 0.9rem;
         text-align: start;

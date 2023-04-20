@@ -1,31 +1,32 @@
 <script>
+import axios from "axios";
 import { store } from "../assets/data/store";
 
 export default {
     name: "SearchBox",
+    emits: ['filter'],
     components: {
-
     },
     data() {
         return {
-            store
+            store,
         }
-    }
+    },
+    mounted() {
+        axios
+            .get('https://db.ygoprodeck.com/api/v7/archetypes.php')
+            .then(response => {
+                store.archetypes = response.data;
+            })
+    },
 }
 </script>
 
 <template>
     <div class="search">
-        <select v-model="store.searchArchetype" class="form-select" aria-label="Default select example">
-            <option selected>Choose Archetype...</option>
-            <option value="1">Ancient Gear</option>
-            <option value="2">Blue-Eyes</option>
-            <option value="3">Cyber Dragon</option>
-            <option value="4">Dark Magician</option>
-            <option value="5">Egyptian God</option>
-            <option value="6">Elemental Hero</option>
-            <option value="7">Toon</option>
-            <option value="8">Utopia</option>
+        <select v-model="store.archetype" @change="$emit('filter')" class="form-select" aria-label="Default select example">
+            <option value="" selected>Choose Archetype...</option>
+            <option :value="arch.archetype_name" v-for="arch in store.archetypes">{{ arch.archetype_name }}</option>
         </select>
     </div>
 </template>
